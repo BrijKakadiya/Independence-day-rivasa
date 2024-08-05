@@ -121,7 +121,7 @@ function loadImage(imageSrc) {
   const img = new Image();
   img.onload = function () {
     ctx.drawImage(staticImage, 0, 0, canvas.width, canvas.height);
-    ctx.drawImage(img, 312, 545, 457, 457);
+    ctx.drawImage(img, 335, 614, 380, 380);
     uploadedImage.src = img.src;
     staticImage.style.display = "none";
   };
@@ -159,7 +159,7 @@ function renderText() {
   ctx.drawImage(staticImage, 0, 0, canvas.width, canvas.height);
 
   // Draw the uploaded image
-  ctx.drawImage(uploadedImage, 312, 545, 457, 457); // Adjust position and size as needed
+  ctx.drawImage(uploadedImage, 335, 614, 380, 380); // Adjust position and size as needed
 
   // Set font style and position
   ctx.font = "bold 35px Arial";
